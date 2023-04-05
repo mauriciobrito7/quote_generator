@@ -1,0 +1,121 @@
+:root {
+  --main-bg-color: #000;
+  --text-color: #fff;
+  --primary-color: #5E35F2;
+  --secondary-color: #E4CEF2;
+  --neutral-color:#C8C8C8;
+  --neutral-black:#212121;
+  font-size: 16px;
+}
+
+html {
+  box-sizing: border-box;
+  -ms-text-size-ajust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--main-bg-color);
+  color: var(--text-color);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+img,
+audio,
+canvas,
+iframe,
+picture,
+progress,
+svg {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  vertical-align: baseline;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-left: 1em;
+  list-style-type: inherit;
+  list-style-position: inside;
+}
+
+label,
+input,
+textarea,
+article,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+button {
+  height: 2.5rem;
+  width: auto;
+  border: 0;
+  border-radius: 4rem;
+  padding: 0 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button.primary {
+  background: var(--primary-color);
+  color: var(--text-color);
+}
+
+button.secondary {
+  background: var(--text-color);
+  color: var(--main-bg-color);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.3em;
+  font-weight: 400;
+}

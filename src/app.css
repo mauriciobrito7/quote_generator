@@ -1,0 +1,49 @@
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ flex-direction: column;
+}
+
+.quote-container {
+ width: auto;
+ max-width: 900px;
+ display: hidden;
+ flex-direction: column;
+ padding: 1.25rem 2rem;
+ border-radius: .5rem;
+ background-color: var(--neutral-black);
+ box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.quote {
+ font-size: 2.5rem;
+ font-weight: 400;
+ color: var(--neutral-color);
+}
+
+.long-quote {
+ font-size: 2rem;
+}
+
+.author {
+ margin-top: 1rem;
+ font-size: 2rem;
+ font-weight: 400;
+ font-style: italic;
+ color: var(--secondary-color);
+}
+
+.buttons-container {
+ display: flex;
+ align-items: center;
+ margin-top: 1rem;
+ gap: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+ .quote-container {
+  margin: auto .5rem;
+ }
+}
