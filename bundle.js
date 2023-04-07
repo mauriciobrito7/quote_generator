@@ -42,7 +42,7 @@ async function getQuote() {
     } else {
       quoteText.classList.remove('long-quote');
     }
-    quoteText.innerText = data.quote;
+    quoteText.innerText = `“${data.quote}”`;
     complete();
   } catch (error) {
     console.error(error);
