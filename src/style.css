@@ -13,12 +13,15 @@
 }
 
 :root {
-  --main-bg-color: #000;
-  --text-color: #fff;
+  --black: #000;
+  --white: #fff;
   --primary-color: #5E35F2;
+  --primary-light-color: #6F48FF;
   --secondary-color: #E4CEF2;
-  --neutral-color:#C8C8C8;
-  --neutral-black:#212121;
+  --neutral-color: #C8C8C8;
+  --neutral-black: #212121;
+  --linear-gradient-primary-secondary: linear-gradient(90deg, var(--primary-color) 6%, var(--primary-light-color) 72%);
+  --linear-gradient-white-secondary: linear-gradient(90deg, var(--white) 2%, var(--secondary-color) 38%);
   font-size: 16px;
   --font-text: 'Recoleta Alt', sans-serif;
   --font-title: 'Hellix', sans-serif;
@@ -34,8 +37,8 @@ html {
 
 body {
   overflow-x: hidden;
-  background: var(--main-bg-color);
-  color: var(--text-color);
+  background: var(--black);
+  color: var(--white);
   font-family: var(--font-text);
 }
 
@@ -126,12 +129,20 @@ button {
 
 button.primary {
   background: var(--primary-color);
-  color: var(--text-color);
+  color: var(--white);
+}
+
+button.primary:hover {
+  background: var(--linear-gradient-primary-secondary);
 }
 
 button.secondary {
-  background: var(--text-color);
-  color: var(--main-bg-color);
+  background: var(--white);
+  color: var(--black);
+}
+
+button.secondary:hover {
+  background: var(--linear-gradient-white-secondary);
 }
 
 p {
